@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- TailWind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9a1677510c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <div>
+            <div>
+                <div id="nav-btn-container">
+
+                    <button id="home-btn">Home</button>
+                    <button id="saved-notes-btn">Saved Notes</button>
+                    <button id="favorites-btn">Favorites</button>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Home page -->
+        <section id="home-container"
+            class="max-w-xs lg:max-w-[35%] space-y-4 flex flex-col justify-center min-h-[92vh] my-auto mx-auto ">
+            <div id="input-fields" class=" space-y-4">
+                <input class="border-2 px-4 py-1" type="text" placeholder="Notes Title(compulsory)" id="note-title">
+                <textarea class="border-2 px-4 py-2" name="" id="note-description" cols="30" rows="5"
+                    placeholder="Notes description(Optional)"></textarea>
+            </div>
+            <div>
+                <button id="save-btn"
+                    class="bg-[#0ea5e9] px-4 py-2 rounded-lg text-white font-medium hover:bg-blue-400">Save</button>
+            </div>
+        </section>
+        <!-- Saved Notes -->
+        <section id="saved-notes-section" class="hidden w-[90%] mx-auto ">
+            <h2 class="text-center font-medium text-3xl py-4">Saved Notes:</h2>
+            <div id="saved-notes-container" class="grid lg:grid-cols-3 md:grid-cols-2 shadow-md p-4 m-4 rounded-xl">
+
+            </div>
+
+        </section>
+        <!-- Modal -->
+
+        <input type="checkbox" id="my-modal-6" class="modal-toggle" />
+        <div class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <div id="notes-body">
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Modal End -->
+    </main>
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
