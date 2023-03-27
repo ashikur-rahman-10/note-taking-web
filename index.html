@@ -25,9 +25,9 @@
             <div>
                 <div id="nav-btn-container">
 
-                    <button id="home-btn">Home</button>
-                    <button id="saved-notes-btn">Saved Notes</button>
-                    <button id="favorites-btn">Favorites</button>
+                    <button id="home-btn"><i class="fa-solid fa-house"></i> Home</button>
+                    <button id="saved-notes-btn"><i class="fa-solid fa-floppy-disk"></i> Saved Notes</button>
+                    <button id="favorites-btn"><i class="fa-solid fa-heart"></i> Favorites</button>
 
                 </div>
             </div>
@@ -44,18 +44,20 @@
             </div>
             <div>
                 <button id="save-btn"
-                    class="bg-[#0ea5e9] px-4 py-2 rounded-lg text-white font-medium hover:bg-blue-400">Save</button>
+                    class="bg-[#0ea5e9] px-4 py-2 rounded-lg text-white font-bold hover:bg-blue-400"><i
+                        class="fa-solid fa-file-import"></i> Save</button>
             </div>
         </section>
         <!-- Saved Notes -->
         <section id="saved-notes-section" class="hidden w-[90%] mx-auto ">
             <h2 class="text-center font-medium text-3xl py-4">Saved Notes:</h2>
-            <div id="saved-notes-container" class="grid lg:grid-cols-3 md:grid-cols-2 shadow-md p-4 m-4 rounded-xl">
+            <div id="saved-notes-container"
+                class="grid lg:grid-cols-3 md:grid-cols-2 lg:shadow-md gap-4 lg:p-4  lg:m-4 rounded-xl">
 
             </div>
 
         </section>
-        <!-- Modal -->
+        <!-- Modal for saved-->
 
         <input type="checkbox" id="my-modal-6" class="modal-toggle" />
         <div class="modal modal-bottom sm:modal-middle">
@@ -67,9 +69,32 @@
             </div>
         </div>
         <!-- Modal End -->
+        <!-- Modal for favorite-->
+
+        <input type="checkbox" id="my-modal-7" class="modal-toggle" />
+        <div class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <div id="favorite-notes-body">
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Modal End -->
+        <!-- favorites-section -->
+        <section id="favorites-section" class="hidden lg:w-[90%] mx-auto ">
+            <h2 class="text-center font-medium text-3xl py-4">Favorites Notes:</h2>
+            <div id="favorite-notes-container"
+                class="grid lg:grid-cols-3 md:grid-cols-2 lg:shadow-md gap-4 lg:p-4  lg:m-4 rounded-xl">
+
+            </div>
+
+        </section>
     </main>
     <!-- Scripts -->
-    <script src="js/scripts.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/savedNote.js"></script>
+    <script src="js/favorite.js"></script>
 </body>
 
 </html>
